@@ -28,7 +28,7 @@
         
                     <ul class="list menu">
                         <li class="menu-item">
-                            <a target="_self" class="menu-link link current" href="index.html">Студия</a>
+                            <a target="_self" class="menu-link link current portfolio" href="index.html">Студия</a>
                         </li>
                         <li class="menu-item">
                             <a target="_self" class="menu-link link" href="portfolio.html">Портфолио</a>
@@ -74,7 +74,7 @@
                 <section class="hero">
                     <div class="hero-middle">
                         <h1 class="main-slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                        <button class="modal-btn" type="button">Заказать услугу</button>
+                        <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
                     </div>
                 </section>
             
@@ -137,11 +137,31 @@
                 <div>
                     <h2 class="activity">Чем мы занимаемся</h2>
                     <ul class="list activity-list">
-                        <li class="activity-list-item"><img src="./images/what-are-we-doing/left.jpg" alt="Человек печатает на клавиатуре" width="370" height="294"> 
+                        <li class="activity-list-item">
+                            <a href="#" class="activity-link link">
+                                <div class="activity-front">
+                                    <img src="./images/what-are-we-doing/left.jpg" alt="Человек печатает на клавиатуре" width="370" height="294">
+                                    <p class="activity-overlay-text">десктопные приложения</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="activity-list-item"><img src="./images/what-are-we-doing/middle.jpg" alt="Человек держит в руках телефон" width="370" height="294">
+                        <li class="activity-list-item">
+                            <a href="#" class="activity-link link">
+                                <div class="activity-front">
+                                    <img src="./images/what-are-we-doing/middle.jpg" alt="Человек держит в руках телефон" width="370" height="294">
+                                    <p class="activity-overlay-text">мобильные приложения</p>
+
+                                </div>
+                            </a>
+
                         </li>
-                        <li class="activity-list-item"><img src="./images/what-are-we-doing/right.jpg" alt="Человек держит в руках планшет" width="370" height="294">
+                        <li class="activity-list-item">
+                            <a href="#" class="activity-link link">
+                                <div class="activity-front">
+                                    <img src="./images/what-are-we-doing/right.jpg" alt="Человек держит в руках планшет" width="370" height="294">
+                                    <p class="activity-overlay-text">дизайнерские решения</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -439,6 +459,18 @@
     
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="backdrop-modal-btn" width="" height="">
+                    <use href="./images/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 
